@@ -8,12 +8,16 @@ import Image from "next/image";
 
 // components
 import ResponsiveAppBar from "../../../components/app_bar";
+import Footer from "../../../components/footer";
 
 export default function BlogPage() {
   return (
     <div>
       <ResponsiveAppBar></ResponsiveAppBar>
-      <Container className="bg-white py-4 mx-auto">
+      <Container className="bg-white  mx-auto">
+        <Typography variant="h1" className="font-black sm:text-base md:text-xl lg:text-2xl xl:text-4xl py-8" sx={{ color: "#074C06" }}>
+          Most Recent Posts
+        </Typography>
         <div className="grid justify-items-center gap-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia component="img" alt="green iguana" height="140" image="illustration.png" />
@@ -94,6 +98,7 @@ export default function BlogPage() {
         </div>
         <Pagination count={10} shape="rounded" className="mt-10 grid justify-items-center" />
       </Container>
+      <Footer></Footer>
     </div>
   );
 }

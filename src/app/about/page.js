@@ -21,6 +21,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 
 // components
 import ResponsiveAppBar from "../../../components/app_bar";
+import Footer from "../../../components/footer";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -63,7 +64,7 @@ export default function AboutPage() {
   return (
     <div>
       <ResponsiveAppBar></ResponsiveAppBar>
-      <Container className="bg-white py-4 mx-auto">
+      <Container className="bg-white py-4 mx-auto h-screen">
         <Grid alignItems="center">
           <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
             <Paper
@@ -119,6 +120,7 @@ export default function AboutPage() {
           </Box>
         </Grid>
       </Container>
+      <Footer></Footer>
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 // components
 import ResponsiveAppBar from "../../../components/app_bar";
+import Footer from "../../../components/footer";
 
 // @mui
 import { Container, Typography } from "@mui/material";
@@ -13,6 +14,7 @@ export default function ProfilePage() {
       <Container>
         <Typography sx={{ mt: 2 }}>Ini profile page</Typography>
       </Container>
+      <Footer></Footer>
     </div>
   );
 }
